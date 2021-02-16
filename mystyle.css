@@ -1,0 +1,18 @@
+body {
+background-image: url("images/starfield.jpg");
+background-color: #040480;
+color: white;
+}
+
+#.myframe {
+#color: white;
+#}
+
+
+.maindiv {
+font-size: larger;
+}
+
+.footdiv {
+border-top: 4px dotted white;
+}
