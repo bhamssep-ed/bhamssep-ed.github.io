@@ -1,6 +1,6 @@
 body {
 background-image: url("images/starfield.jpg");
-background-color: #040480;
+background-color: #040440;
 color: white;
 }
 
@@ -11,6 +11,7 @@ color: white;
 
 .maindiv {
 font-size: larger;
+font-family: Arial, Helvetica, sans-serif;
 }
 
 .footdiv {
