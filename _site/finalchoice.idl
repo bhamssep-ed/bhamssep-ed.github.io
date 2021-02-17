@@ -1,0 +1,34 @@
+spaceobs='Space Observatory '+['One','Two','Three']
+
+  groundobs='Ground Observatory '+['One', 'Two','Three']
+
+  platform=['the ground','in space']
+
+  target=['Moon','Galaxy','Pulsar']
+  
+  headcode=['<html>',$
+	    '<head>',$
+	    '<link rel="stylesheet" href="mystyle.css">',$
+	    '</head>',$
+	    '<body>',$
+    '<div class="maindiv">']
+
+for i=0,n_elements(target)-1 do begin $
+for j=0,n_elements(platform)-1 do begin $
+if j eq 0 then obs=groundobs else obs=spaceobs &$
+  for k=0,n_elements(obs)-1 do begin $
+outfile='choices0'+stringz(i,1)+stringz(j,1)+stringz(k,1)+'.html' &$
+openw,1,outfile &$
+for m=0,n_elements(headcode)-1 do printf,1,headcode(m) &$
+printf,1,'<p>You chose to observe a '+target(i)+' from '+platform(j) &$
+  printf,1,'using '+obs(k)+'.' &$
+  printf,1,'<p> Here are your results.' &$
+  printf,1,'</div>' &$
+  printf,1,'</body>' &$
+printf,1,'</html>' &$
+close,1 &$
+endfor &$
+ endfor &$ 
+endfor
+
+
