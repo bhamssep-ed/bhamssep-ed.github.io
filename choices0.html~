@@ -1,0 +1,26 @@
+<html>
+    <head>
+      <title>Choose your target</title>
+      <link rel="stylesheet" href="mystyle.css">
+    </head>
+    <body>
+<div class="maindiv">
+<p> First, choose which kind of target you want to observe.
+  <table>
+    <tr>
+      <td>Moon</td>
+      <td>Galaxy</td>
+      <td>Pulsar</td>
+      </tr>
+    <tr>
+      <td><a href="choices00.html"><img src="images/planet_moons.jpg" width=300px alt-txt="Moon"></td>
+      <td><a href="choices01.html"><img src="images/galaxy.jpg" alt-txt="Galaxy" width=300px></td>
+      <td><a href="choices02.html"><img src="images/vela_labeled.jpg" alt-txt="Pulsar" width=300px></td>
+    </tr>
+    </table>
+
+      
+  
+               
+</div>
+        </body>
